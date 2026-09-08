@@ -25,4 +25,24 @@ ids = re.findall(
   r'"videoId":"([^"]+)"',
   data
 )
+  return ids[0] if ids else None 
+except Exception:
+     return None
+
+def create_youtube_url(command):
   
+  text = command.lower().strip
+
+patterns = [
+  r"play\s+song\s+(.+)",
+  r"play\s+music\s+(.+)",
+  r"play\s+(.+)",
+  r"youtube\s+(.+)"
+]
+ querry = command
+
+for pattern in patters:
+  match = re.search(
+    pattern,
+    text
+  )
