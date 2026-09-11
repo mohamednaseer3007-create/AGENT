@@ -37,6 +37,6 @@ A multi-functional AI agent built with Flask that combines email generation and 
   - Simple voice command interface for music playback
   - Quick access to search results
 
-## Project Structure
+
 
 
